@@ -1,0 +1,4 @@
+
+vti.server.port=7070
+vti.server.external.host=alfrescodemo.com
+vti.server.external.port=${vti.server.port}

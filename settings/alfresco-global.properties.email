@@ -1,0 +1,51 @@
+
+# Outbound Email Configuration
+mail.host=alfrescodemo.com
+mail.port=25
+mail.protocol=smtp
+mail.username=
+mail.password=
+mail.encoding=UTF-8
+mail.from=admin@alfrescodemo.com
+mail.smtp.auth=false
+mail.smtp.timeout=30000
+mail.smtp.starttls.enable=false
+mail.smtp.debug=false
+mail.smtps.auth=false
+mail.smtps.starttls.enable=false
+mail.testmessage.send=true
+mail.testmessage.to=harlin.seritt@gmail.com
+mail.testmessage.subject=Outbound SMTP
+mail.testmessage.text=The Outbound SMTP email subsystem is working.
+notification.email.siteinvite=true
+
+# Gmail:
+
+# Sample Gmail settings
+mail.host=smtp.gmail.com
+mail.port=465
+mail.username=user@gmail.com
+mail.password=password
+mail.protocol=smtps
+mail.smtps.starttls.enable=true
+mail.smtps.auth=true
+
+# IMAP settings
+imap.server.enabled=true
+imap.server.port=143
+imap.server.host=alfrescodemo.com
+imap.server.folder.cache.size=10000
+
+# Inbound email
+email.inbound.enabled=true
+email.server.enabled=true
+email.server.port=25
+email.server.domain=alfrescodemo.com
+email.server.allowed.senders=.*
+email.server.allowed=.*
+
+#This user must exist in AD with the proper case
+email.inbound.unknownUser=admin
+
+#This is required so that users can also send email
+email.inbound.emailContributorsAuthority=EVERYONE
