@@ -50,4 +50,11 @@ then
 	echo $adwarn
 	cat $settingsfile >> $globsettings
 	cp $sharedfile $shared
+
+elif [ "$authtype" == "external" ]
+then
+	echo $authannounce
+	echo $adwarn
+	cat $settingsfile >> $globsettings
+	cp $sharedfile $shared         
 fi
